@@ -1,0 +1,123 @@
+<doctype!>
+<html>
+<title>T&T Group </title>
+<loop>
+<!-- Audio element -->
+    <audio id="laho.mp3" autoplay>
+       <source src="laho.mp3" type="audio/mp3">
+
+</audio >
+     <audio id="REMA - BOUT U Instrumental.mp3"> 
+  <source src="REMA - BOUT U Instrumental.mp3" type="audio/mp3">
+    </audio>
+<script>
+
+    document.getElementById('laho.mp3').onended = function() {
+        document.getElementById('REMA - BOUT U Instrumental.mp3').play();
+    };
+</script>
+</loop>
+  
+<center>
+<img src="himm.png" width="200" height="200" border="5">
+</center>
+<style>
+    body {
+      margin: 25;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: left;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+      background-size: 400% 400%;
+      animation: gradientAnimation 10s ease infinite;
+      font-family: Elephant, sans-serif;
+      color: red;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+  </style>
+<head>
+<font face ="Elephant" size="5">
+<center>
+<h1> Welcome To T&T Group</h1>
+<h3>Where everything is almost possible!</h3>
+</center>
+    <hr width="1000" size="4" color="black">
+</head>
+
+<font face="Ariel" color="black">
+<center><h5> Fill the forms below to visit the next page. </h5></center>
+
+
+<form method=post action="cgi-bin/What course do you offer.cgi">
+<center>
+Select a course:
+<select>
+<option>-None-</option>
+<option>General Science</option>
+<option>General Art</option>
+<option>Visual Art</option>
+<option>Business</option>
+<option>Agriculture</option>
+</select><br>
+
+</center>
+</form>
+
+<form method=post action="cgi-bin/What WAEC Exam are you writing this year.cgi">
+<center>
+Select an Exam:
+<select>
+<option>-None-</option>
+<option>Wassce</option>
+<option>Neco</option>
+<option>NOV-DEC</option>
+<option>SAT</option>
+<option>JAN FEB</option>
+</select><br>
+
+</center>
+</form>
+
+
+<form method=post action="cgi-bin/What year are you writing.cgi">
+<center>
+Choose a Year
+<select>
+<option>-None-</option>
+<option>2025</option>
+<option>2026</option>
+<option>2027</option>
+<option>2028</option>
+<option>2029</option>
+<option>2030</option>
+</select><br>
+
+<form method=post action="cgi-bin/Do You Need Help With Your Exams.cgi">
+<center>
+Choose an Option
+<select>
+<option>-None-</option>
+<option>Yes</option>
+<option>No</option>
+</select><br>
+<input type="Submit" value="Submit">
+<input type="Reset" value="Clear">
+</center>
+</form>
+</form>
+
+<em>
+<center>
+<a href="">Visit this site if you are an examiner</a>
+</center>
+</em>
