@@ -14,7 +14,7 @@
   </script>
 <loop>
 <!-- Audio element -->
-    <audio id="laho.mp3" autoplay after speech>
+    <audio id="laho.mp3">
        <source src="laho.mp3" type="audio/mp3">
 
 </audio >
@@ -22,7 +22,12 @@
   <source src="REMA - BOUT U Instrumental.mp3" type="audio/mp3">
     </audio>
 <script>
-
+window.onload = function() {
+      setTimeout(function() {
+        const delayedAudio = new Audio("laho.mp3");
+        delayedAudio.play();
+      }, 5000); // 5000 milliseconds = 5 seconds
+    };
     document.getElementById('laho.mp3').onended = function() {
         document.getElementById('REMA - BOUT U Instrumental.mp3').play();
     };
