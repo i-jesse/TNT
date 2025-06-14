@@ -10,6 +10,13 @@
       speech.volume = 1; // Loudness (0 to 1)
       speech.lang = 'en-US'; // Language
       speechSynthesis.speak(speech);
+    speech.onend = function() {
+        // Play the next sound after speech finishes
+        const nextAudio = new Audio("laho.mp3");
+        nextAudio.play();
+      };
+
+      speechSynthesis.speak(speech);
     };
   </script>
 <loop>
@@ -22,11 +29,7 @@
   <source src="REMA - BOUT U Instrumental.mp3" type="audio/mp3">
     </audio>
 <script>
-      setTimeout(function() {
-        const delayedAudio = new Audio("laho.mp3");
-        delayedAudio.play();
-      }, 5000); // 5000 milliseconds = 5 seconds
-    };
+     
     document.getElementById('laho.mp3').onended = function() {
         document.getElementById('REMA - BOUT U Instrumental.mp3').play();
     };
