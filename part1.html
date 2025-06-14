@@ -5,24 +5,18 @@
     body {
       margin: 0;
       height: 100vh;
+      background: linear-gradient(to right, blue, yellow);
       display: flex;
       justify-content: center;
-      align-items: left;
-      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
-      background-size: 400% 400%;
-      animation: gradientAnimation 5s ease infinite;
-      font-family: Elephant;
-      color: red ; black;
-    }
-
-    @keyframes gradientAnimation {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+      align-items: center;
+      font-family: sans-serif;
+      color: white;
     }
 
     h1 {
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 1rem 2rem;
+      border-radius: 8px;
     }
   </style>
   <center>
