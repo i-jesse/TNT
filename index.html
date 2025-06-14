@@ -9,6 +9,11 @@
       speech.pitch = 1; // Tone (0 to 2)
       speech.volume = 1; // Loudness (0 to 1)
       speech.lang = 'en-US'; // Language
+        speech.onend = function() {
+        // Play the next sound after speech finishes
+        const nextAudio = new Audio('laho.mp3');
+        nextAudio.play();
+      };
       speechSynthesis.speak(speech);
     };
   </script>
