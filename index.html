@@ -1,6 +1,17 @@
 <doctype!>
 <html>
 <title>T&T Group </title>
+    <script>
+    window.onload = function() {
+      const message = "Welcome to the website of the T and T Group";
+      const speech = new SpeechSynthesisUtterance(message);
+      speech.rate = 1; // Speed of the voice (0.1 to 10)
+      speech.pitch = 1; // Tone (0 to 2)
+      speech.volume = 1; // Loudness (0 to 1)
+      speech.lang = 'en-US'; // Language
+      speechSynthesis.speak(speech);
+    };
+  </script>
 <loop>
 <!-- Audio element -->
     <audio id="laho.mp3" autoplay>
