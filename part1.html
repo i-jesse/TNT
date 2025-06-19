@@ -1,6 +1,23 @@
 <Doctype html!>
 <lang="en">
 <title> Thanks for visiting the previous page </title>
+    <script>
+    window.onload = function() {
+      const message = "Thank you for visting the website of the T and T Group and filling the forms. You will hear from us shortly";
+      const speech = new SpeechSynthesisUtterance(message);
+      speech.rate = 1; // Speed of the voice (0.1 to 10)
+      speech.pitch = 1; // Tone (0 to 2)
+      speech.volume = 1; // Loudness (0 to 1)
+      speech.lang = 'en-US'; // Language
+    speech.onend = function() {
+        // Play the next sound after speech finishes
+        const nextAudio = new Audio("REMA - BOUT U Instrumental.mp3");
+        nextAudio.play();
+      };
+
+      speechSynthesis.speak(speech);
+    };
+  </script>
 <style>
     body {
       margin: 0;
