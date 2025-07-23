@@ -3,72 +3,69 @@
 <title> Thanks for visiting the previous page </title>
     <script>
     window.onload = function() {
-      const message = "Thank you for visting the website of the T and T Group and filling the forms. You will hear from us shortly";
+      const message = "Thank you for visting the website of the TNT.org. You will hear from us shortly";
       const speech = new SpeechSynthesisUtterance(message);
       speech.rate = 1; // Speed of the voice (0.1 to 10)
       speech.pitch = 1; // Tone (0 to 2)
       speech.volume = 1; // Loudness (0 to 1)
       speech.lang = 'en-US'; // Language
     speech.onend = function() {
-        // Play the next sound after speech finishes
-        const nextAudio = new Audio("REMA - BOUT U Instrumental.mp3");
-        nextAudio.play();
-      };
-
-      speechSynthesis.speak(speech);
+   speechSynthesis.speak(speech);
     };
   </script>
 <style>
     body {
       margin: 0;
       height: 100vh;
-      background: linear-gradient(to right, blue, yellow);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: sans-serif;
-      color: white;
+      min-height: 100vh;
+      background: linear-gradient(-60deg, #000 0%, #8d8686 50%, #000000 100%);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease-in-out infinite;
+      
+      font-family: poppins, Arial, sans-serif;
     }
 
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
     h1 {
       background-color: rgba(0, 0, 0, 0.3);
       padding: 1rem 2rem;
       border-radius: 8px;
     }
   </style>
-    <loop>
-<!-- Audio element -->
-     <audio id="REMA - BOUT U Instrumental.mp3"> 
-  <source src="REMA - BOUT U Instrumental.mp3" type="audio/mp3">
-    </audio>
-<script>
-    document.getElementById('REMA - BOUT U Instrumental.mp3').onended = function() {
-        document.getElementById('REMA - BOUT U Instrumental.mp3').play();
-    };
-</script>
-</loop>
+    
   <center>
   <img src=himm.png height="200" width="200" border="5">
   </center>
   <head>
-  <font face="Ariel Black" color="black" size="4">
+  <font face="Ariel Black" color="white" size="4">
   <center>
-  <h2>Thanks for visiting T&T Group on the web</h2>
+  <h2>Thanks for visiting TNT.org</h2>
   </center>
-            <hr width="1500" size="4" color="black">
+            <hr width="1500" size="4" color="white">
   </head>
 
-  <font ="Ariel" color="black">
+  <font ="Ariel" color="white">
   <center><h4>Thank you for filling the forms provided.</h4></center> 
-<center><h4>The details will be forwarded to the T&T Group.</h4></center>
-<center><h4> For futher Information and assistance,ontact T&T Group on all social media platforms.</h4></center>
+<center><h4>The details will be forwarded to the TNT.org </h4></center>
+<center><h4> For futher Information and assistance,contact TNT on all social media platforms.</h4></center>
   </font>
   
   
 <center> 
 <img src="sap.png" height="50" width="50" >
- <font face="calibri" color="black">
- <h4>+233(0)5958****4</h4>
+ <font face="calibri" color="white">
+ <h4>+233(0)595877654</h4>
 <img src="snapp.png" height="65" width="95">
  <h4>i.kojoo</h4>
+
+     h6>
+    <font face="Times New Roman" color="White">
+<hr width="1200" size="1" color="White">
+<center><div class="bottom-text">© 2025 TNT.org - Jesse — All rights reserved</div></center>
+    </font>
+</h6>
  
