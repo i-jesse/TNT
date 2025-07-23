@@ -34,12 +34,18 @@
     body {
       margin: 0;
       height: 100vh;
-      background: linear-gradient(to right, blue, yellow);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: sans-serif;
-      color: white;
+      min-height: 100vh;
+      background: linear-gradient(-60deg, #000 0%, #8d8686 50%, #000000 100%);
+      background-size: 400% 400%;
+      animation: gradientMove 10s ease-in-out infinite;
+      
+      font-family: poppins, Arial, sans-serif;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     h1 {
